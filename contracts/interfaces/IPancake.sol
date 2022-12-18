@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity >0.4.18;
+
+interface IPancakeRouterHH {
+    function swapExactTokensForTokens(uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline) external returns (uint[] memory amounts);
+    function swapTokensForExactTokens(uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline) external returns (uint[] memory amounts);
+}
+
